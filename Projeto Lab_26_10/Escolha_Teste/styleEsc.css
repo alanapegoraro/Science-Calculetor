@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8AB9E4;
+}
+
+.quadrado {
+    width: 700px;
+    height: 400px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    color: #0C3254;
+    font-family: Arial Black, sans-serif;
+}
+
+.texto {
+    font-size: 50px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+button {
+    background-color: #0C3254;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}

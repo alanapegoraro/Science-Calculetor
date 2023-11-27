@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>Pico-Green</title>
+        <link rel="stylesheet" href="styleAnt.css">
+    </head>
+</head>
+<body>
+    <div id="container">
+        <div id="title">Pico-Green</div>
+        <div class="input-section">
+            <label for="ABSMedias">Média das Absorvâncias:</label>
+            <input type="number" id="ABSMedias">
+        </div>
+        <div class="input-section">
+            <label for="ConMedias">Média dos Controles:</label>
+            <input type="number" id="ConMedias">
+        </div>
+        <button id="calculateButton">Calcular Resultado</button>
+        <div id="result"></div>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("calculateButton").addEventListener("click", function () {
+            var ABSValue = parseFloat(document.getElementById("ABSMedias").value);
+            var ControleValue = parseFloat(document.getElementById("ConMedias").value);
+            var resultado = ABSValue/ControleValue;
+            document.getElementById("result").innerHTML = "Resultado: " + resultado.toFixed(3);
+        });
+    </script>
+</body>
+</html>
